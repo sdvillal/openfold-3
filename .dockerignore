@@ -107,3 +107,6 @@ checkpoints/
 results/
 outputs/
 logs/ 
+
+# If we switch to pixi also for the docker images this should stay
+.pixi/
