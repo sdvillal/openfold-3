@@ -132,6 +132,8 @@ openfold3 = { path = ".", editable = true }
 
 # --- DeepSpeed
 # TODO: make deepspeed CF package for linux_aarch64
+#       note: https://github.com/deepspeedai/DeepSpeed/issues/5640
+#             https://github.com/conda-forge/deepspeed-feedstock/pull/81
 
 [feature.deepspeed]
 
