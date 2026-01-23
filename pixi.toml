@@ -319,15 +319,18 @@ torch = { version = "*", index = "https://download.pytorch.org/whl/cu130" }
   # N.B. aarch64 is not officially supported (yet), but seems to be working (for OF3-used primitives at least)
   platforms = ["linux-64", "linux-aarch64"]
 
+  [feature.deepspeed.pypi-dependencies]
+  deepspeed = { git = "https://github.com/deepspeedai/DeepSpeed.git", rev = "15ad92b459c6c39b7c5527efe1e42080eb4ab99f"}
+
   # FIXME: A few temporary variants:
   #   - soon deepspeed will have cuda13 package in CF
   #   - aarch64 is not officially supported, so at the moment installing from sdist and crossing fingers
-  [feature.deepspeed-cuda12.target.linux-64.dependencies]
-  deepspeed = ">=0.18.3"
-  [feature.deepspeed-cuda12.target.linux-aarch64.pypi-dependencies]
-  deepspeed = ">=0.18.3"
-  [feature.deepspeed-cuda13.pypi-dependencies]
-  deepspeed = ">=0.18.3"
+  # [feature.deepspeed-cuda12.target.linux-64.dependencies]
+  # deepspeed = ">=0.18.3"
+  # [feature.deepspeed-cuda12.target.linux-aarch64.pypi-dependencies]
+  # deepspeed = ">=0.18.3"
+  # [feature.deepspeed-cuda13.pypi-dependencies]
+  # deepspeed = ">=0.18.3"
 
   [feature.deepspeed-build.dependencies]
   # These are only needed to build local extensions the first time
