@@ -97,7 +97,6 @@ openfold3-cuda12 = { no-default-feature = true, features = [
     "pytorch-conda-cuda",
     "deepspeed",
     "deepspeed-build",
-    "deepspeed-cuda12",
     "cuequivariance-cuda12",
     "openfold3-editable",
     "tests"
@@ -120,7 +119,6 @@ openfold3-cuda13 = { no-default-feature = true, features = [
     "pytorch-pypi-cuda13",
     "deepspeed",
     "deepspeed-build",
-    "deepspeed-cuda13",
     "cuequivariance-cuda13",
     "openfold3-editable",
     "tests"
