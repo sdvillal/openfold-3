@@ -15,6 +15,7 @@
 __all__ = ["core", "projects", "entry_points", "run_openfold"]
 
 import importlib.util
+import os
 
 import gemmi
 from packaging import version
@@ -22,7 +23,7 @@ from packaging import version
 if version.parse(gemmi.__version__) >= version.parse("0.7.3"):
     gemmi.set_leak_warnings(False)
 
-if importlib.util.find_spec("deepspeed") is not None:
+if importlib.util.find_spec("deepspeed") is not None and not os.getenv("OF3_DO_NOT_HACK_DEEPSPEED"):
     import deepspeed
 
     # TODO: Resolve this later
