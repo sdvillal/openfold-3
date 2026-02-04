@@ -151,6 +151,18 @@ openfold3-cuda13-pypi = { no-default-feature = true, features = [
     "openfold3-editable-full",
     "tests"
 ] }
+affinity = { no-default-feature = true, features = [
+    "python",
+    "openfold3-cpu",
+    "cuda12",
+    "pytorch-conda-cuda",
+    "deepspeed",
+    "deepspeed-build",
+    "cuequivariance-cuda12",
+    "openfold3-editable",
+    "tests",
+    "affinity"
+]}
 
 # Maybe we should have solve-groups, but how to conciliate between e.g. cu12 and cu13?
 # N.B. at the moment all these are editable installs
@@ -385,6 +397,8 @@ pixi-to-conda-lock = ">=0.4.3"
 # we were hitting a bug for all environments that bring pytorch from pytorch indices
 # see https://github.com/basnijholt/pixi-to-conda-lock/pull/12
 
+[feature.affinity.pypi-dependencies]
+aqaffinity = { path = "./plugins/aqaffinity", editable = true }
 
 [tasks]
 
