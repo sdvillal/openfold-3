@@ -36,11 +36,21 @@
 # | H100 cuda13   | to test    | to test    | to test    | to test    |
 # | B300 cuda12   | works      | works      | to test    | to test    |
 # | B300 cuda13   | works      | works      | to test    | to test    |
+# | GB10 cuda12   | n/a        | n/a        | broken/works (safe-only)    |            |
+# | GB10 cuda13   | n/a        | n/a        | works      | works      |
 # | CPU           | works      | n/a        | to test    | n/a        |
 # +---------------+------------+------------+------------+------------+
 #    * works = "works for me"
 #    * to test = "have not tried yet, but environment resolves"
 #
+#  On GB12
+#  Running: pixi run -e openfold3-cuda12 pytest -v
+#  Running: pixi run -e openfold3-cuda12-pypi pytest -v
+#  Errors with `KeyError: 'cuequivariance_torch'`
+#  Running: pixi run -e openfold3-cuda12-safe pytest -v
+#  works
+# 
+
 # Using the environments
 # ----------------------
 # Change to the openfold-3 directory and run any command using the pixi shim.
