@@ -36,7 +36,7 @@
 # | H100 cuda13   | to test    | to test    | to test    | to test    |
 # | B300 cuda12   | works      | works      | to test    | to test    |
 # | B300 cuda13   | works      | works      | to test    | to test    |
-# | GB10 cuda12   | n/a        | n/a        | broken/works (safe-only)    |            |
+# | GB10 cuda12   | n/a        | n/a        | broken     | broken     |
 # | GB10 cuda13   | n/a        | n/a        | works      | works      |
 # | CPU           | works      | n/a        | to test    | n/a        |
 # +---------------+------------+------------+------------+------------+
