@@ -195,6 +195,7 @@ biotite = ">=1.6"
 pdbeccdutils = "*"
 
 # --- Bioinformatics & Workflows
+kalign-python = "*"
 hmmer = "*"
 hhsuite = "*"
 snakemake = "*"
