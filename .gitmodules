@@ -1,3 +1,3 @@
 [submodule "plugins/aqaffinity"]
 	path = plugins/aqaffinity
-	url = https://huggingface.co/SandboxAQ/AQAffinity
+	url = https://huggingface.co/affinity-heads/AQAffinity
